@@ -1,0 +1,2 @@
+# 在这里加项目依赖
+# pip freeze > requirements.txt 可以从已装环境导出
