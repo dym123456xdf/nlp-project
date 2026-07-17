@@ -7,3 +7,21 @@ __pycache__/
 .idea/dictionaries
 .idea/shelf
 .idea/
+
+# ===== 新增（苍小凌 2026-07-17） =====
+
+# 训练产物（不入 git）
+*.bin
+*.pth
+*.ttf
+
+# 模型权重目录
+src/**/model/
+
+# word2vec 大语料（day02）
+src/**/data/fil9
+src/**/data/wh02ad
+src/**/data/wh02ag
+
+# TensorBoard event 二进制（配置类 tsv 保留）
+*.tfevents.*
