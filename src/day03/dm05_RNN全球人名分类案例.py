@@ -82,6 +82,15 @@ def read_data(file_path):
     print(f'my_list_x: {len(my_list_x)}')       # 20074
     print(f'my_list_y: {len(my_list_y)}')       # 20074
 
+    # 扩展: 打印前 N 条解析结果, 直观看到 (人名 -> 国家) 的对应关系.
+    SHOW_N = 10                                # 想看几条, 改这里即可
+    print(f'-- 数据预览: 前 {SHOW_N} 条 (人名 -> 国家, 含各自长度) --')
+    print(f'  {"序号":<4} {"人名":<15} {"人名长度":<8} {"国家":<12} {"国家长度":<8}')
+    print(f'  {"-"*4} {"-"*15} {"-"*8} {"-"*12} {"-"*8}')
+    for i, (name, country) in enumerate(zip(my_list_x[:SHOW_N], my_list_y[:SHOW_N]), start=1):
+        print(f'  {i:<4} {name:<15} {len(name):<8} {country:<12} {len(country):<8}')
+    print('-- 预览结束 --')
+
     # 7. 返回解析后的 样本 和 标签.
     return my_list_x, my_list_y
 
