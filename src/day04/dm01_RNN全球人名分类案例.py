@@ -826,7 +826,7 @@ if __name__ == '__main__':
     # dm_test_rnn_lstm_gru()
 
     # 5. 测试: 模型训练.
-    # train_rnn()         # 训练完成, 总耗时: 49s, 总训练了 20074个样本!!
+    train_rnn()         # 训练完成, 总耗时: 49s, 总训练了 20074个样本!!
     # train_lstm()        # 训练完成, 总耗时: 48s, 总训练了 20074个样本!!
     # train_gru()         # 训练完成, 总耗时: 78s, 总训练了 20074个样本!!
 
@@ -834,4 +834,4 @@ if __name__ == '__main__':
     # dm_test_train_rnn_lstm_gru()
 
     # 7. 测试: 模型预测.
-    dm_predict_rnn('Piao')
+    # dm_predict_rnn('Piao')
